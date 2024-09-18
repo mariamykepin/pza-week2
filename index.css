@@ -1,46 +1,114 @@
-/* h2 {
-    font-size: 20px;
-    color: aquamarine;
-} */
+body {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    margin: 15px;
+    background-color: lightblue;
+}
 
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-  
-  caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  thead,
-  tfoot {
-    background-color: rgb(228 240 245);
-  }
-  
-  th,
-  td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-  }
-  
-  td:last-of-type {
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
     text-align: center;
-  }
+    color: #4682B4; 
+    position: sticky;
+    background-color: #f1f1f1;
+    top : 4px;
+}
+
+h3 {
+    color: #6a408b;
+}
+
+h4{
+    color: #083f1a;
+}
+
+.tools, .social-media, .price-list {
+    margin-bottom: 20px;
+    border: dashed blue;
+}
+
+.tools{
+    background-color: beige;
+    padding: 10px;
+}
+
+.tools a {  
+    color: #333;  
+    text-decoration: none; 
+}
   
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
-  
-  tfoot td {
+.tools a:hover {  
+    color: #083f1a;  
+    font-weight: bold;  
+}
+
+.price-list table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.price-list th, .price-list td {
+    border: 1px solid #817c7c;
+    padding: 8px;
+    text-align: left;
+}
+
+.price-list th {
+    background-color: #f2f2f2;
     font-weight: bold;
-  }
-  
+}
+
+.price-list td {
+    color: #292525;
+}
+
+.sample-image {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.order-form textarea {
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+button:focus {
+    outline: none;
+    box-shadow:#4CAF50;
+}
+
+.social-media ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.social-media ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-media ul li a:hover {
+    text-decoration: underline;
+    color:brown;
+}
